@@ -31,6 +31,19 @@ li a {
   border-color: rgb(84, 252, 84);
 
 }
+li a:hover::after {
+  width: 100%;
+}
+li a::after {
+  content: '';
+  background: rgb(13, 255, 0);
+  height: 2px;
+  width: 0;
+  display: block;
+  margin-top: 2px !important;
+  transition: width 1s;
+  margin: 0 auto;
+}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
