@@ -54,6 +54,7 @@ overflow: hidden;
 background-color: #0005;
 }
 
+
 li {
 float: left;
 }
@@ -77,6 +78,7 @@ font-style: italic;
 text-align: left;
 font-size: 35px;
 color: white;
+width: 100%;
 }
 
 div{
@@ -245,3 +247,6 @@ border: 1px solid #ccc;
 }
 }
 
+i {
+  color: #ffc371;
+}
