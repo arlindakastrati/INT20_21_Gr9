@@ -17,6 +17,7 @@ body {
   background-size: 100% ;
   
   }
+
 .overlay {
 height: 100%;
 width: 0;
@@ -33,9 +34,10 @@ top: 25%;
 width: 100%;
 text-align: center;
 }
+ 
 
 .overlay a {
-padding: 12px 52px;
+padding: 12px 52.5px;
 text-decoration: none;
 font-size: 18px;
 color: white;
@@ -54,12 +56,14 @@ right: 1px;
 font-size: 45px;
 }
 
-ul {
+
+ ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
 background-color: #0005;
+
 }
 
 
@@ -267,7 +271,6 @@ i {
 }
 #first {
   display: block;
-  margin-top: 30px;
   background-color: rgb(80, 80, 80);
   
 }
@@ -296,7 +299,7 @@ i {
   font-style: italic;
    font-size: 20px;
   line-height: 1.28;
-  color: rgb(39, 33, 33);
+  color: rgb(255, 255, 255);
 
 text-align: left;
 }
