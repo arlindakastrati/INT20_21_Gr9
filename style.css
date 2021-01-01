@@ -4,9 +4,16 @@ box-sizing: border-box;
 
 body {
 font-family: Arial, Helvetica, sans-serif;
+
+}
+ .day {
+  background-image: url(day.jpg);
+}
+
+ .night {
+  background-image: url(night.jpg);
 }
 body {
-  background-image: url('foto2.jpg');
   background-size: 100% ;
   }
 .overlay {
@@ -72,7 +79,7 @@ background-color: #32354d;
 }
 
 header {
-background-color: #666;
+background-color:rgb(80, 80, 80);
 padding: 10px;
 font-style: italic;
 text-align: left;
@@ -95,7 +102,7 @@ border-radius: 3px;
 
 @media (max-width: 600px) {
 .toptext {
-display: none;
+display: inline;
 } }
 
 .toptext {
@@ -125,7 +132,10 @@ display: block;
 
 section {
 display: flex;
+
+
 }
+
 
 @media (max-width: 600px) {
 section {
@@ -254,23 +264,51 @@ i {
 *,*::before,*,*::after{
   box-sizing: border-box;
 }
-
-
-main {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #9b9b9b;
-  line-height: 3.8;
-
-  text-transform: uppercase;
-  font-weight: bold;
+#first {
+  display: block;
+  margin-top: 30px;
+  background-color: rgb(80, 80, 80);
+  
 }
 
+#first h1{
+  font-size: 50px;
+  text-align: left;
+  color: rgb(214, 136, 83);
+  margin-top: 5%;
+  
+  text-shadow: 5px 5px 5px;
+ 
+ margin-left: 40px;
+ margin-right: 40px;
+ 
+
+
+}
+#kontent {
+  margin-top: 24%;
+}
+#second {
+  display: flex;
+}
+#second p {
+  font-style: italic;
+   font-size: 20px;
+  line-height: 1.28;
+  color: rgb(39, 33, 33);
+
+text-align: left;
+}
+#second img {
+
+  width: 50%;
+  height: 350px;
+  padding-right: 5px;
+margin-top: 20px;
+  margin-bottom: 10px;
+margin-right: 20px;
+margin-left: 20px;
+}
 footer {
   display: -webkit-flex;
   display: -moz-flex;
@@ -280,7 +318,7 @@ footer {
   flex-flow: row wrap;
   padding: 20px;
   color: #fff;
- background-color: #011c39;
+ background-color: #041b33;
 }
 .footer > *{
  flex: 1 100%;
@@ -391,4 +429,14 @@ padding-right: 20%;
 }
 #contact li {
   line-height: 2em;
+}
+section .menu-backdrop {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(97, 49, 23, 0.378);
+  z-index: 10;
+  
 }
