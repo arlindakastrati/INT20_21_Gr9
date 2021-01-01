@@ -15,6 +15,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 body {
   background-size: 100% ;
+  background-position: center;
   }
 .overlay {
 height: 100%;
