@@ -8,10 +8,13 @@ font-family: Arial, Helvetica, sans-serif;
 }
  .day {
   background-image: url(day.jpg);
+  background-repeat: no-repeat;
 }
 
  .night {
   background-image: url(night.jpg);
+  background-repeat: no-repeat;
+
 }
 body {
   background-size: 100% ;
@@ -271,7 +274,7 @@ i {
 }
 #first {
   display: block;
-  background-color: rgb(80, 80, 80);
+  background-color: rgba(80, 80, 80, 0.193);
   border-radius: 20px;
 
 }
@@ -443,7 +446,7 @@ section .menu-backdrop {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(97, 49, 23, 0.378);
+  background: rgba(97, 49, 23, 0.508);
   z-index: 10;
   
 }
