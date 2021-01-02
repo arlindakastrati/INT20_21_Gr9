@@ -272,13 +272,13 @@ i {
 #first {
   display: block;
   background-color: rgb(80, 80, 80);
-  
+  border-radius: 20px;
+
 }
 
 #first h1{
   font-size: 50px;
   text-align: left;
-  color: rgb(214, 136, 83);
   margin-top: 5%;
   
   text-shadow: 5px 5px 5px;
@@ -434,6 +434,9 @@ padding-right: 20%;
 #contact li {
   line-height: 2em;
 }
+.footer-bottom b {
+  text-transform: uppercase;
+}
 section .menu-backdrop {
   position: absolute;
   top: 50%;
@@ -443,4 +446,15 @@ section .menu-backdrop {
   background: rgba(97, 49, 23, 0.378);
   z-index: 10;
   
+}
+#f1:link, #f1:visited {
+  color: white;
+  padding: 14px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+#f1:hover, #f1:active {
+  text-decoration: underline;
 }
