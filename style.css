@@ -18,6 +18,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 body {
   background-size: 100% ;
+  background-origin: initial ;
   
   }
 
