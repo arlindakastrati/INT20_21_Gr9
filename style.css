@@ -36,6 +36,8 @@ position: relative;
 top: 25%;
 width: 100%;
 text-align: center;
+border-radius: 30px;
+
 }
  
 
@@ -46,6 +48,8 @@ font-size: 18px;
 color: white;
 display: block;
 transition: 0.7s;
+border-radius: 30px;
+
 }
 
 .ovelay a:hover, .overlay a:focus {
@@ -66,6 +70,8 @@ margin: 0;
 padding: 0;
 overflow: hidden;
 background-color: #0005;
+border-radius: 30px;
+
 
 }
 
@@ -80,10 +86,17 @@ color: white;
 text-align: center;
 padding: 14px 60px;
 text-decoration: none;
+border-radius: 30px;
+border-radius: 30px;
+
+
 }
 
 li a:hover {
 background-color: #32354d;
+border-radius: 30px;
+color:  #ffc371;
+
 }
 
 header {
@@ -104,8 +117,9 @@ text-align: right;
 }
 
 .active, .menu-bar ul li:hover {
-background: darkgray;
-border-radius: 3px;
+background:#ffc4716b;
+border-radius: 30px;
+
 }
 
 @media (max-width: 600px) {
@@ -130,7 +144,7 @@ display: none!important;
 letter-spacing: 4px;
 }
 
-*, *:before, *after {
+*, *:before, *:after {
 box-sizing: inherit;
 }
 
@@ -152,8 +166,10 @@ flex-direction: column;
 } }
 
 .active, .menu-bar ul li:hover .sub-menu-1 ul li:hover {
-    background: darkgray;
+    background: #ffc4716b;
     border-radius: 3px;
+    border-radius: 30px;
+
   }
 .sub-menu-1 {
 display: none;
@@ -165,11 +181,15 @@ position: absolute;
 background: #0005;
 margin-top: 1px;
 margin-left: -15px;
+border-radius: 30px;
+
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul {
 display: block;
 margin: 5px;
+border-radius: 30px;
+
 } 
 
 .menu-bar ul li:hover .sub-menu-1 ul li {
@@ -179,6 +199,8 @@ border-bottom: 0.5px rgb(78, 55, 55);
 background: transparent;
 border-radius: 0;
 text-align: left;
+border-radius: 30px;
+
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
@@ -186,11 +208,15 @@ border-bottom: none;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
-color: rgb(47, 151, 192);
+color: #ffc371;
+border-radius: 30px;
+
 }
 
 .sub-menu-2 {
-display: none; }
+display: none;
+border-radius: 30px;
+}
 
 .sub-menu-1 li:hover .sub-menu-2 {
 display: list-item;
@@ -203,6 +229,8 @@ margin-left: -10px;
 .sub-menu-1 li:hover .sub-menu-2 ul {
 display: block;
 margin: 5px;
+border-radius: 30px;
+
 }
 
 .sub-menu-1 li:hover .sub-menu-2 ul li {
@@ -229,23 +257,30 @@ color:  rgb(47, 151, 192);
 
 .container input[type=text] {
   padding: 6px;
-  margin-top: 8px;
+  margin-top: 5px;
   font-size: 17px;
-  border: none;
+  border: solid;
+  border-radius: 30px;
+  color: #ffc371;
+  background: transparent;
+
 }
 .container .search-container button {
 float: right;
 padding: 6px 10px;
-margin-top: 8px;
+margin-top: 5px;
 margin-right: 16px;
-background: #ddd;
+background: transparent;
 font-size: 17px;
-border: none;
+border: solid;
+ color: #ffc371;;
 cursor: pointer;
+border-radius: 30px;
+
 }
 
 .container .search-container button:hover {
-background: #ccc;
+background: rgba(255, 255, 255, 0.651);
 }
 
 @media screen and (max-width: 600px) {
@@ -283,7 +318,6 @@ i {
   font-size: 50px;
   text-align: left;
   margin-top: 5%;
-  
   text-shadow: 5px 5px 5px;
  
  margin-left: 40px;
@@ -302,14 +336,14 @@ i {
   font-style: italic;
    font-size: 20px;
   line-height: 1.28;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 
 text-align: left;
 }
 #second img {
 
   width: 50%;
-  height: 350px;
+  height: 310px;
   padding-right: 5px;
 margin-top: 20px;
   margin-bottom: 10px;
@@ -460,4 +494,8 @@ section .menu-backdrop {
 }
 #f1:hover, #f1:active {
   text-decoration: underline;
+}
+
+address {
+  color: #ffc371;
 }
