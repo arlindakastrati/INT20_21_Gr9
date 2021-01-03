@@ -4,7 +4,7 @@
         <title> Dreams</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" type="image/png" href="foto4.png" >
         <style>
@@ -12,13 +12,18 @@
   background-size: 100% ;
   background-position: center;
   background-image: url(night.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+
   }
-            ul {
+  ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
 background-color: #0005;
+border-radius: 30px;
+
+
 }
 
 
@@ -32,24 +37,29 @@ color: white;
 text-align: center;
 padding: 14px 60px;
 text-decoration: none;
+border-radius: 30px;
+border-radius: 30px;
+
+
 }
 
 li a:hover {
 background-color: #32354d;
-}
-#first {
+border-radius: 30px;
+color:  #ffc371;
+
+}  
+  #first {
   display: block;
-  margin-top: 30px;
-  background-color: rgb(80, 80, 80);
+  background-color: rgba(80, 80, 80, 0.459);
   border-radius: 20px;
+
 }
 
 #first h1{
   font-size: 50px;
   text-align: left;
-  color: rgb(214, 136, 83);
   margin-top: 5%;
-  
   text-shadow: 5px 5px 5px;
  
  margin-left: 40px;
@@ -58,10 +68,7 @@ background-color: #32354d;
 
 
 }
-mark {
-  background-color: yellow;
-  color: black;
-border-radius: 10px;}
+
 #kontent {
   margin-top: 24%;
 }
@@ -86,6 +93,35 @@ margin-top: 20px;
 margin-right: 20px;
 margin-left: 20px;
 }
+
+mark {
+  background-color: yellow;
+  color: black;
+border-radius: 10px;}
+
+.audio {
+  justify-content: center;
+  align-items:  center;
+  margin-right: 1000px;
+  margin-bottom: 50px;
+  
+ 
+}
+video {
+  margin-left: 25px;
+  border-radius: 30px;
+}
+#f1:link, #f1:visited {
+  color: white;
+  padding: 14px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+#f1:hover, #f1:active {
+  text-decoration: underline;
+}
 .container .search-container {
   float: right;
   
@@ -93,23 +129,30 @@ margin-left: 20px;
 
 .container input[type=text] {
   padding: 6px;
-  margin-top: 8px;
+  margin-top: 4px;
   font-size: 17px;
-  border: none;
+  border: solid;
+  border-radius: 30px;
+  color: #ffc371;
+  background: transparent;
+
 }
 .container .search-container button {
 float: right;
 padding: 6px 10px;
-margin-top: 8px;
+margin-top: 4px;
 margin-right: 16px;
-background: #ddd;
+background: transparent;
 font-size: 17px;
-border: none;
+border: solid;
+ color: #ffc371;;
 cursor: pointer;
+border-radius: 30px;
+
 }
 
 .container .search-container button:hover {
-background: #ccc;
+background: rgba(255, 255, 255, 0.842);
 }
 
 @media screen and (max-width: 600px) {
@@ -128,37 +171,16 @@ padding: 14px;
 border: 1px solid #ccc;
 }
 }
-.audio {
-  justify-content: center;
-  align-items:  center;
-  margin-right: 1000px;
-  margin-bottom: 50px;
-  
- 
-}
-video {
-  margin-left: 25px;
-}
-#f1:link, #f1:visited {
-  color: white;
-  padding: 14px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
 
-#f1:hover, #f1:active {
-  text-decoration: underline;
-}
+
         </style>
     </head>
     <body>
-      <div>
+      <div class="container">
         <nav style="width: 100%;">
             
             <ul>
-                <li class="active"><a href="Sandbox.html"><i class="fa fa-home"> Home</i></a></li>
+                <li ><a href="Sandbox.html"><i class="fa fa-home"> Home</i></a></li>
             <li><a href="om.html"><i class="fa fa-shield"></i> Our mission</a></li>
             <li><a href="ourteam.html"><i class="fa fa-envelope"></i> Our team</a></li>
             <div class="search-container">
@@ -174,7 +196,7 @@ video {
         <div id="first">
             
 
-            <h1 style="text-align: left;"><a  id="f1" href="dreams.html">Dreams</a></h1>
+            <h1 style="text-align: left;"><a style="color: rgb(255, 255, 255);" id="f1" href="dreams.html">Dreams</a></h1>
             <div id="second">
            
             <p style="margin-left: 40px; margin-right: 40px;">Dreaming of education is associated to your intelligence. You may dream of education in regards to yourself or even for someone around you.
