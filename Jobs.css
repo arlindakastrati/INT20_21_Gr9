@@ -95,10 +95,8 @@ h3{
 }
 #q7{
     display:inline-block;
-    text-align: center;
-    display:inline-block;
+    text-align: left;
     font-size:150%;
-    /* Ose kshtu me u rendit lista me numra ose vetem <ol>*/
     list-style-type:decimal; 
 }
 #q4{
@@ -128,3 +126,19 @@ h3{
    font-size:50%;
    text-align: center;
 }
+a:link{
+    color:rgb(238, 171, 153);
+}
+
+a:visited{
+    color:rgb(206, 240, 17);
+}
+a:hover{
+    color:rgb(96, 181, 202);
+    text-decoration: underline;
+}
+a:active{
+    color:#632d2d;
+    text-decoration: underline;
+}
+
