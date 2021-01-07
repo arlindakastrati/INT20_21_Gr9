@@ -1,8 +1,9 @@
-*{
+body{
     font-style: sans-serif;
-    margin-left: 10px;
-    margin-right: 20px;
-    background-color:white;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    background-color:rgb(126, 164, 179);
 }
 
 
@@ -10,17 +11,19 @@ body h1{
     margin-top: 40px;
     text-align: center;
     font-size: 60px;
-    color: rgb(13, 10, 194);
+    color: rgb(7, 72, 102);
+    background-color: transparent;
 }
 
 body h3{
     text-align: start;
     font-size: 40px;
-    color: rgb(13, 10, 194);
+    color:rgb(6, 82, 117);
 }
 body p{
     font-size: 22px;
     text-align: start;
+    color: white;
 }
 body ul li{
     font-size:20px;
@@ -28,10 +31,10 @@ body ul li{
 
 p.spechhh {
     position: relative;
-    width: 600px;
-    height: 300px;
-    left:850px;
-    top:-350px;
+    width: 500px;
+    height: 320px;
+    left:890px;
+    top:-320px;
     text-align: center;
     line-height: 100px;
     background-color: #feb236;
@@ -39,6 +42,7 @@ p.spechhh {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    color: black;
     
   }
 
@@ -55,6 +59,7 @@ p.spechhhh {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    color: black;
     
   }
 
@@ -71,6 +76,7 @@ p.specch{
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    color: black;
 
 
 }
@@ -89,6 +95,7 @@ p.speccch{
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    color: black;
 
 
 }
@@ -106,6 +113,7 @@ p.specccch{
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    color: black;
 
 
 }
@@ -123,6 +131,7 @@ p.speccccch{
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    color: black;
 
 
 }
