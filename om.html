@@ -227,13 +227,19 @@
      #o1 p{
           color: white;
           border-radius: 20px;
-background-color: rgba(189, 186, 186, 0.618);
-font-size: 20px;
-margin-right: 20px;
-margin-left: 10px;
-        }
-        #o2 img {
+          background-color: rgba(189, 186, 186, 0.618);
+          font-size: 20px;
+          margin-right: 20px;
+          margin-left: 10px;
+          }
+     #o2 img {
          margin-top: 80px;
+          }
+     #jsobject{
+            font-size: 30px;
+            color:rgb(255, 255, 255); 
+            margin-top: 50px; 
+            text-align:center;
         }
   </style>
 </head>
@@ -415,7 +421,14 @@ margin-left: 10px;
         <p style="text-align: center; font-size: 23pxs; color: white; text-shadow: turquoise 5px 5px 5px;">For anyone who like to communicate with computers and make them do great things, you have come to the right place for you.</p>
           
         <hr>
-        <p style="font-size: 30px;color:rgb(255, 255, 255) ;margin-top: 50px; text-align:center">Sand-box entertainment</p>
+        <p id="jsobject" ></p>
+        <script>
+            var page={
+                name:"Sand-Box",
+                type:"entertainment",
+            };
+        document.getElementById("jsobject").innerHTML=page.name + "  " +page.type;
+        </script>
         
 </body>
 </html>
