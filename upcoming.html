@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="uft-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+    Today
+</title>
+<style>
+    body {
+background-color: rgb(146, 146, 146);
+        font-family: Arial, Helvetica, sans-serif;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        
+    }
+    #n{
+        background-color: rgb(0, 0, 0);
+    }
+    ul{
+        list-style-type: none;
+        padding: 0  ;
+        margin: 0;
+        overflow: hidden;
+        margin-left: 400px;
+        border-radius: 30px;
+
+    }
+    li{
+        float: left;
+        border-radius: 30px;
+
+    }
+    li a{
+  font-size: 25px;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+  text-shadow: 5px 5px 5px;
+  border-radius: 30px;
+  
+    }
+    li a:hover::after {
+  width: 100%;
+  background-color: none;
+
+}
+li a::after {
+  content: '';
+  background: rgb(188, 202, 204);
+  height: 2px;
+  width: 0;
+  display: block;
+  margin-top: 2px !important;
+  transition: width 1s;
+  margin: 0 auto;
+}
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: none;
+  border-radius: 30px;
+
+}
+#nav li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 30px;
+
+}
+
+#nav li a:hover {
+  background-color: none;
+  color: white;
+  border-radius: 30px;
+
+}
+.active,  a{
+    background: rgba(190, 190, 190, 0.226);
+}
+.active,  ul li:hover {
+    background:rgba(0, 0, 0, 0.596);
+    border-radius: 30px;
+    
+}
+.mySlides1  {display: none;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 30px;
+  border: 3px solid black;
+  padding: 8px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+#v1{
+    display: inline;
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-decoration:  none;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+.time{
+    margin-left: 20px;    
+    font-size: 20px;
+    font-style: normal;
+    
+}
+#f1:link, #f1:visited {
+  color: white;
+  padding: 14px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+#f1:hover, #f1:active {
+  text-decoration: none;
+} .f1 {
+   
+  position: absolute;
+  top: 8px;
+  left: 16px;
+font-size: 30px;
+color: white;
+border-radius: 30px;
+background-color: rgb(153, 205, 50);
+}
+.column {
+  float: left;
+  width: 28.5%;
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color:  white;
+  margin-left: 30px;
+ margin-right: 10px;
+ padding: 8px;
+ border: 3px solid lightskyblue;
+}
+
+
+.column b {
+    text-align: left;
+}
+.column1 b {
+    text-align: left;
+}
+.column1 {
+  float: left;
+  width: 45%;
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+ background-color:  white;
+ margin-left: 30px;
+ margin-right: 10px;
+ padding: 9px;
+ border: 3px solid lightskyblue;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+.f11{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline rgb(61, 145, 170);
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+    text-align: center;
+}
+.b0{
+  font-size: 50px;
+  margin-left: 600px;
+  text-decoration: underline;
+  color: gold;
+}
+</style>
+    </head>
+    <body>
+
+<div id="n">
+    <ul>
+        <li ><a href="events.html">Events</a></li>
+        <li><a href="todo.html">TO DO</a></li>
+        <li><a href="#########">History</a></li>  
+    </ul>
+</div>
+<hr>
+<div>
+    <ul id="nav">
+        <li class="active"><a href="today.html">Today</a></li>
+        <li><a href="upcoming.html">Upcoming</a></li>
+    </ul>
+</div>
+<div>
+<div>
+  <b class="b0">Top awaitings</b>
+</div>
+<div class="slideshow-container"> 
+    <div class="mySlides1"><a href="https://www.eventbrite.com/e/monthly-wellness-wednesday-an-hour-for-you-your-wellbeing-tickets-113687193456?aff=ebdssbonlinebrowse" target="_blank">
+    <div id="v1">
+        <div class="f1">Monthly Wellness Wednesday: An Hour for You & Your Wellbeing</div> 
+         <img src="eventspic/rocks.jpeg" style="width: 100%;" >
+        
+       
+     </div>
+    </a>
+    <div class="time">
+        <b>Wed, January 20, 2021  9:00 PM – 10:00 PM CET</b></div>
+    </div>
+
+<div class="mySlides1"><a href="https://www.eventbrite.com/e/the-mads-a-night-of-shorts-2-live-riffing-with-mst3ks-the-mads-tickets-132988934483?aff=ebdssbonlinebrowse" target="_blank">
+    <div id="v1">
+        <div class="f1">The Mads: A Night of Shorts 2 - Live riffing with MST3K's The Mads!</div> 
+         <img src="eventspic/movie.jpg" style="width: 100%;" >
+        
+       
+     </div>
+    </a>
+    <div class="time">
+        <b>Sat, January 23, 2021  9:30 PM – 11:00 PM CET</b>
+     </div>
+    </div>
+  
+    <div class="mySlides1"><a href="https://www.eventbrite.com/e/the-2021-financial-checklist-tickets-130040078375?aff=ebdssbonlinebrowse" target="_blank">
+        <div id="v1">
+            <div class="f1">The 2021 Financial Checklist
+            </div> 
+             <img src="eventspic/finance.jpg" style="width: 100%;" >
+         </div>
+        </a>
+        <div class="time">
+       <b> Fri, January 29, 2021  9:30 PM – 11:00 PM CET</b></div>
+        </div>
+  
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
+  <div class="row">
+    <div class="column">
+        <a href="https://www.eventbrite.co.uk/e/pacing-how-to-write-an-addictive-page-turner-registration-133203530345?aff=ebdssbonlinebrowse" target="_blank">
+            <img src="eventspic/Pacing-Anna.jpg" alt="Addictive Page-Turner" style="width:100%">
+            <b> Wed, January 6, 2021  3:00 PM – 4:00 PM EST</b>
+            <div class="f11">The 2021 Financial Checklist
+        </a>
+    </div> 
+    </div>
+    <div class="column">
+      <a href="https://www.eventbrite.com/e/van-gogh-museum-amsterdam-livestream-art-tour-jan-9-1100-am-est-tickets-133991557355?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/VanGogh.jpg" alt="Van Gogh art museum" style="width:100%">
+        <b> Sat, January 9, 2021  5:00 PM – 6:40 PM CET</b>
+        <div class="f11">Van Gogh Museum - Amsterdam: Livestream 
+      </a>
+   </div> 
+    </div>
+    <div class="column">
+      <a href="https://www.eventbrite.com/e/virtual-meet-and-greet-a-lincoln-park-zoo-animal-tickets-127932460433?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/ParkZoo.jpg" alt="Virtual meet about park zoo animal" style="width:100%">
+        <b> Sat, January 9, 2021  5:00 PM – 5:45 PM CET</b>
+        <div class="f11">Virtual Meet-and-Greet a Lincoln Park Zoo Animal
+      </a>
+   </div> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column1">
+      <a href="https://www.eventbrite.co.uk/e/vision-board-and-goal-setting-workshop-tickets-133714978099?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/VisionGoal.jpg" alt="Vision board and goal setting workshop" style="width:100%">
+        <b> Sun, 10 January 2021  11:00 – 17:00 CET</b>
+        <div class="f11">Vision Board and Goal Setting Workshop
+      </a>
+   </div> 
+    </div>
+    <div class="column1">
+      <a href="https://www.eventbrite.com/e/managing-upwards-tickets-129281020011?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/ManagingUpwards.jpg" alt="Forest" style="width:100%">
+        <b> Mon, January 11, 2021  11:00 AM – 11:45 AM CET</b>
+        <div class="f11">Managing Upwards
+        </a>
+    </div> 
+    </div>
+    
+  </div>
+
+
+  <div class="row">
+  </div>
+  <div class="column">
+    <a href="https://www.eventbrite.ca/e/covid-19-vaccine-and-you-tickets-132138468717?aff=ebdssbonlinebrowse" target="_blank">
+      <img src="eventspic/COVID-19-Vaccine.jpg" alt="COVID-19 vaccine webinar" style="width:100%">
+      <b> Tue, January 12, 2021  12:30 AM – 2:30 AM CET</b>
+      <div class="f11">COVID 19 Vaccine and You Informative webinar daily session
+      </a>
+    </div> 
+  </div>
+  <div class="column">
+    <a href="https://www.eventbrite.co.uk/e/free-webinar-on-positive-psychology-in-a-time-of-pandemic-tickets-124820273799?aff=ebdssbonlinebrowse" target="_blank">
+      <img src="eventspic/PositivePsychoPandemy.jpg" alt="Webinar about positive psychology in pandemic time" style="width:100%">
+      <b> Wed, 13 January 2021  20:30 – 21:30 CET</b>
+      <div class="f11">Free Webinar on Positive Psychology in a Time of Pandemic
+      </a>
+    </div> 
+  </div>
+  <div class="column">
+    <a href="https://www.eventbrite.com/e/edap-pdlns-35th-annual-conf-virtual-session-1-of-4-tickets-125368517611?aff=ebdssbonlinebrowse" target="_blank">
+      <img src="eventspic/PediatricNurses.jpg" alt="Conference about pediatrics" style="width:100%">
+      <b> Sun, May 30, 2021 9:00 AM CEST</b>
+      <div class="f11">EDAP: PdLN's 35th Annual Conf - Virtual /Session 1 of 4
+    </a>
+ </div> 
+  </div>
+
+
+  <div class="row">
+    <div class="column1">
+      <a href="https://www.eventbrite.com.au/e/effective-classroom-practice-literacy-for-all-tickets-126901544937?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/EffectiveClassrom.jpg" alt="Reading Effectively Practice" style="width:100%">
+        <b> Thu, 14 Jan 2021, 1:00 PM CET</b>
+        <div class="f11">Effective Classroom Practice: Literacy for All
+      </a>
+   </div> 
+    </div>
+    <div class="column1">
+      <a href="https://www.eventbrite.sg/e/idp-ielts-masterclasstm-webinar-sea-tickets-85048035965?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/IELTSwebinar.jpg" alt="IELTS Masterclass Webinar" style="width:100%">
+        <b> Mon, Jan 18, 2021 11:30 AM CET + 2 more events</b>
+        <div class="f11">IDP IELTS Masterclass™ Webinar (SEA) Facebook - Zoom
+      </a>
+   </div> 
+    </div>
+   
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <a href="https://www.eventbrite.com/e/mit-sloan-sports-analytics-conference-2021-registration-107231291680?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/SportAnalytics.jpg" alt="Sport Analytics Conference" style="width:100%">
+        <b> April 8-9, 2021</b>
+        <div class="f11">MIT Sloan Sports Analytics Conference 2021
+      </a>
+   </div> 
+    </div>
+    <div class="column">
+      <a href="https://www.eventbrite.co.uk/e/a-feminists-guide-to-botany-online-botanical-painting-session-tickets-107072247976?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/Botany.jpg" alt="Painting session about botany" style="width:100%">
+        <b> Thu, Jan 7, 2021 7:30 PM CET</b>
+        <div class="f11">A FEMINIST'S GUIDE TO BOTANY: Online Botanical Painting Session
+      </a>
+   </div> 
+    </div>
+    <div class="column">
+      <a href="https://www.eventbrite.co.uk/e/startup-2021-the-uks-biggest-start-up-show-of-the-new-year-tickets-124391294711?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/StartUp.jpg" alt="Learn about UK-biggest Start-Up" style="width:100%">
+        <b> Sat, 23 January 2021  10:30 – 17:00 CET</b>
+        <div class="f11">StartUp 2021: The UK's biggest start-up show of the new year
+      </a>
+   </div> 
+    </div>
+  </div>
+  <script>
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+    
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
+    </body>
+
+</html>
