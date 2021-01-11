@@ -6,15 +6,15 @@
       <title>Variables and condition</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <script>
-          $(document).ready(function(){
-            $('#show').click(function(){
-              $('main').show();
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#ID1").hide();
             });
-            $('#hide').click(function(){
-              $('main').hide();
+            $("#show").click(function(){
+                $("#ID1").show();
             });
-          });
-        </script>
+        });
+    </script>
         <script>
           $(document).ready(function(){
             $(".btn1").click(function(){
@@ -114,13 +114,14 @@
           <br><br>
           
           <h2 style="font-size: 30px;">Extern Variables<br></h2>
-          <p id="ID1">
+          <main id="ID1">
           This keyword is used to access variable in a file which is declared & defined in some other file, that is the 
             existence of a global variable in one file is declared using extern keyword in another file.<br>
-          <br></p>
+          <br>
             <img src="variables1.4.gif">
-          <button id="hide">Hide</button>
-          <button id="show">Show</button>
+          </main>  
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
       <br><br><br><br>
       <h2 style=" font-size: 40px;
       text-align: center;">Condition in C++</h2><hr><br>
@@ -211,6 +212,14 @@
           <source src="Music.mp3" type="audio/mpeg">
           Your browser does not support the audio element
       </audio>
+      <button style="margin-left:995px; margin-bottom:45px;">Hide this audio</button>
+      <script>
+          $(document).ready(function(){
+              $("button").click(function(){
+                  $("#audio").remove();
+              })
+          })
+      </script>
       <a href="#" style="float:right">Go again in first page (click here) </a> <br><br>
       <p id="demo"></p>
     <script>
