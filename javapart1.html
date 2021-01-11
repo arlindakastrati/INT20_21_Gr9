@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Java Sytanx</title>
+        <title>The syntax of Java </title>
         <style>
             h1{
                 color: rgb(7, 72, 102);
@@ -21,6 +21,19 @@
            
             }
         </style>
+        <script>
+            var r = confirm("Are you sure you want to continue on this page?");
+            if (r == true) {
+            
+                x = "Click OK to go the page.";
+            
+            } else {
+            
+                x = "Click OK to finish.";
+            
+            }
+            alert (x);
+        </script>
         
     </head>
     <body style="font-size: 22px; margin-left: 70px;margin-right: 70px; background-color:rgb(126, 164, 179);">
@@ -137,13 +150,21 @@
                 in which the different components of the program correspond clearly to different 
                 components of its specification, so you can reason compositionally about it. [...] 
                 The tools, including the compiler, have to be based on some theory of what it means 
-                to write a correct program."       <b>Grace Hopper</b> </p>
+                to write a correct program."       <b id="authname">Grace Hopper</b> <button onclick="this.disabled =true,mytion()" style="bottom: 5px;border: solid 2px;
+                border-color:  rgb(38, 115, 141); 
+                  border-radius:10px;
+                  background-color:aliceblue;height: 25px; top:-2px;" >Long name</button></p>
 
     </body>
     <p id="data" style=" border: none; background-color:rgb(126, 164, 179);"></p>
            <script>
             var d = new Date();
             document.getElementById("data").innerHTML=d;
-        </script>
+            function mytion() {
+            var name = document.getElementById("authname").innerHTML; 
+            var replacename = name.replace("Hopper", "Brewster Murray Hopper");
+            document.getElementById("authname").innerHTML = replacename;}
+               
+           </script>
 
     </html>
