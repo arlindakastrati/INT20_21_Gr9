@@ -5,7 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our mission</title>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#text1").text("two thousand and twenty-one.");
+        });
+    });
+</script>
 
   <link rel="stylesheet" href="#########">
   <style>
@@ -315,13 +322,14 @@
     <img  src="om/l4.jpg">
 
 
-            <dd><br>Many prototypes have been built since the early 20th century, using 
-                a variety of flight technologies, such as distributed propulsion;
-                some have true VTOL performance. The PAL-V Liberty roadable aircraft
-                targeted 2021 to become the first flying car in full production.</dd>
-                
-                
-</div>
+    <dd><br>Many prototypes have been built since the early 
+        20th century, using 
+         a variety of flight technologies, such as distributed propulsion;
+         some have true VTOL performance. The PAL-V Liberty roadable aircraft
+         targeted  to become the first flying car in full production in <p id="text1" style="margin-top:-4px;">2021.
+             <button id="btn1" style="margin-top:-95px; border-radius:8px;">Set Text</button>
+         </p></dd>
+     </div>
 <br>
 <br>
 <dt style="margin-left: 20px;"><b>•Hyper-fast trains</b></dt>
