@@ -157,9 +157,15 @@
                 <code>type name[size1][size2]...[sizeN]</code><br><br>
                 For example:<br>
                 <br><img src="vector5.2.png"><br>
-                This array x can hold a maximum of 24 elements.
-            
+                <p id="setjquery">This array x can hold a maximum of <span style="background-color:rgb(108, 120, 133); border-radius:5px;">24 elements.</span></p>
             </p>
+            <script>
+                $(document).ready(function(){
+                    var text = $("#setjquery").text();
+                    $("#setjquery").after(text);
+                })
+            </script>
+
             <div style="background-color:rgba(157, 160, 163, 0.699);
             color:rgb(235, 240, 243);
             border-radius: 5%;
