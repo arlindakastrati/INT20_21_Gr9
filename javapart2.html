@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Java Sytanx</title> 
+        <title>The Logic of Java </title> 
         <style> 
         body{
             margin: 50px 50px;
@@ -70,7 +70,7 @@
         when the program aborts. Finding logic errors, on the other hand, can be very challenging. In the
         upcoming pages, you will learn the techniques of tracing programs and finding logic errors.</p>
     <h2>Common Errors</h2>
-    <ul style="border: double; border-color:  rgb(38, 115, 141);  background-color: aliceblue;width:550px;
+    <ul style="border: solid 4px; border-color:  rgb(38, 115, 141);  background-color: aliceblue;width:550px;
     ">
         <li>Missing Braces</li>
         <li>Missing Semicolons</li>
@@ -101,7 +101,9 @@
        memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types
        to variables, you can store integers, decimals, or characters in these variables.</p>
     <p>There are two data types available in Java:</p>
-    <ul> <li>Primitive Data Types (boolean, char, byte, short, int, long, float and double)</li> <li>Reference/Object Data Types(classes, interfaces, and arrays)</li></ul>
+    <ul style="border: solid 4px;
+    border-color:  rgb(38, 115, 141); background-color: aliceblue;width:550px;
+    "> <li>Primitive Data Types (boolean, char, byte, short, int, long, float and double)</li> <li>Reference/Object Data Types(classes, interfaces, and arrays)</li></ul>
     <img src="jp4.jpg" alt="javatext"  width="650px;" height="380;" >
 
 
@@ -109,8 +111,19 @@
         <source src="Java4.mp4" type="video/mp4">
         </video>
     <h1 >Variables</h1>
-    <p>A variable is a container which holds the value while the Java program is executed. A variable is assigned with 
-        a data type.Variable is a name of memory location. There are three types of variables in java: local, instance and static.</p>
+    <p id="variab" style="height: 50px;">A variable is a container which holds the value while the Java program is executed. A variable is assigned with 
+        a data type.Variable is a name of memory location. There are three types of variables in java: local, instance and static.<button onclick="varia()" style="bottom: 5px;border: solid 2px;
+        border-color:  rgb(38, 115, 141); 
+          border-radius:10px;
+          background-color:aliceblue;height: 25px;top:-3px;">Find words that contain "variable"</button></p>
+    <script>
+            function varia() {
+              var word = "A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.Variable is a name of memory location. There are three types of variables in java: local, instance and static."; 
+              var result= word.match(/variable/g);
+              document.getElementById("variab").innerHTML = result;
+              
+            }
+     </script>
     <p>Variable is name of reserved area allocated in memory. In other words, it is a name of memory location. It is a combination of 
         <b>"vary + able"</b> that means its value can be changed.</p>
   
@@ -160,7 +173,7 @@
 <!--<figcaption style="margin-left: 50px;">RAM</figcaption>-->
       <p style="margin-left: 350px;margin-top:-120px; width: 150px;height:30px;border:solid; border-color:  rgb(38, 115, 141);  background-color: aliceblue; text-align: center;">Reserved Area</p>
   
-<button style="margin-top: 100px;margin-left: 50px;width: 60px;height:30px;" onclick="myFunction()">RAM</button>
+<button style="margin-top: 100px;margin-left: 50px;width: 60px;height:30px;" onclick="myram()">RAM</button>
 <h id="Ram" style="width: 200px; border-color:  rgb(38, 115, 141);  background-color: aliceblue;"></h>
 <img src="j2.2.png" alt="javavaries"  width="400px;" height="250;" style="margin-left: 870px; margin-top:-290px ;">
 
