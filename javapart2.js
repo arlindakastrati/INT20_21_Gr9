@@ -1,5 +1,9 @@
-//let result =prompt('Are you sure that you wanna delete this?');
-//console.log(result);
 
-function myFunction(){
+
+function myram(){
     document.getElementById("Ram").innerHTML="Random-access memory";}
+function locvar() {
+ var a = "to continue?";
+alert("Are you still OK " + a); 
+}
+locvar();
