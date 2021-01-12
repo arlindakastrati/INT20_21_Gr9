@@ -43,7 +43,7 @@ border-radius: 30px;
  
 
 .overlay a {
-padding: 12px 52.5px;
+padding: 12px 52.2px;
 text-decoration: none;
 font-size: 18px;
 color: white;
@@ -321,7 +321,7 @@ i {
   font-size: 50px;
   text-align: left;
   margin-top: 5%;
-  text-shadow: 5px 5px 5px;
+  text-shadow: 3px 3px 3px;
  
  margin-left: 40px;
  margin-right: 40px;
@@ -331,6 +331,8 @@ i {
 }
 #kontent {
   margin-top: 24%;
+  background-color: white;
+  border-radius: 20px;
 }
 #second {
   display: flex;
@@ -339,7 +341,9 @@ i {
   font-style: italic;
    font-size: 20px;
   line-height: 1.28;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+ 
+ 
 
 text-align: left;
 }
@@ -352,6 +356,7 @@ margin-top: 20px;
   margin-bottom: 10px;
 margin-right: 20px;
 margin-left: 20px;
+border-radius: 20px;
 }
 footer {
   display: -webkit-flex;
@@ -363,6 +368,7 @@ footer {
   padding: 20px;
   color: #fff;
  background-color: #041b33;
+ border-radius: 20px;
 }
 .footer > *{
  flex: 1 100%;
@@ -435,7 +441,6 @@ padding-right: 20%;
   background: #364a62;
   width: 40px;
   height: 40px;
-  display: inline-flex;
   margin-right: 50px;
 }
 
