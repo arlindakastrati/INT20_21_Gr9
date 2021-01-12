@@ -10,21 +10,24 @@
             $("#hide").click(function(){
                 $("#ID1").hide();
             });
+            
             $("#show").click(function(){
                 $("#ID1").show();
             });
-        });
-    </script>
-        <script>
-          $(document).ready(function(){
+
             $(".btn1").click(function(){
               $("#table").animate({padding:"+=100px"});
             });
+
             $(".btn2").click(function(){
               $("table").animate({padding:"-=100px"});
             });
-          });
-        </script>
+
+              $("#btn4").click(function(){
+                  $("#audio").remove();
+              })
+          })
+      </script>
     </head>
     <body>
       <h1> Variables and conditions in C++ </h1>     
@@ -212,14 +215,7 @@
           <source src="Music.mp3" type="audio/mpeg">
           Your browser does not support the audio element
       </audio>
-      <button style="margin-left:995px; margin-bottom:45px;">Hide this audio</button>
-      <script>
-          $(document).ready(function(){
-              $("button").click(function(){
-                  $("#audio").remove();
-              })
-          })
-      </script>
+      <button id="btn4" style="margin-left:995px; margin-bottom:45px;">Hide this audio</button>
       <a href="#" style="float:right">Go again in first page (click here) </a> <br><br>
       <p id="demo"></p>
     <script>
