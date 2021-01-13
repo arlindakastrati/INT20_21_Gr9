@@ -55,7 +55,7 @@ button:hover {
   width: 50%;
 }
 
-.container {
+.content {
   padding: 16px;
 }
 
@@ -106,18 +106,84 @@ li a {
   }
 }
 </style>
+    <script> 
+  function signupvalidation() { 
+      var firstname = document.forms["Sign-up Validation"]["firstname"]; 
+      var lastname = document.forms["Sign-up Validation"]["lastname"]; 
+      var middlename = document.forms["Sign-up Validation"]["middlename"]; 
+      var course =  document.forms["Sign-up Validation"]["course"];
+      var email =  document.forms["Sign-up Validation"]["email"]; 
+      var phone =  document.forms["Sign-up Validation"]["phone"]; 
+      var password =   document.forms["Sign-up Validation"]["psw"]; 
+      var passwordr =   document.forms["Sign-up Validation"]["psw-repeat"];
+      var gender =   document.forms["Sign-up Validation"]["gender"];
+      
+     
+
+      if (firstname.value == "") { 
+          alert("Please enter your first name?"); 
+          firstname.focus(); 
+          return false; 
+      } 
+      if (middlename.value == "") { 
+          alert("Please enter your middle name?"); 
+          middlename.focus(); 
+          return false; 
+      } 
+      if (lastname.value == "") { 
+          alert("Please enter your last name?"); 
+          lastname.focus(); 
+          return false; 
+      } 
+    
+      if (phone.value == "") { 
+          alert( "Please enter your phone number?"); 
+          phone.focus(); 
+          return false; 
+      } 
+     
+      if (email.value == "") { 
+          alert( "Please enter your email?"); 
+          email.focus(); 
+          return false; 
+      } 
+
+
+
+      if (password.value == "") { 
+          alert("Please enter your password?"); 
+          password.focus(); 
+          return false; 
+      } 
+      if (passwordr.value == "") { 
+          alert("Please repeat your password?"); 
+          passwordr.focus(); 
+          return false; 
+      } 
+     
+      if((gender[0].checked == false) && ( gender[1].checked == false )) {
+          alert("Please choose your gender?"); 
+          gender.focus(); 
+          return false;
+         }
+        
+      
+
+      return true; 
+  } 
+</script> 
   </head>
 <body>
   
 
-  <div class="nav">
+  <div class="included">
     <ul>
       <li style="float: left;"><a href="contact.html"><i class="fa fa-chevron-left"></i></a></li>
       </ul>
 
 
-<form action="#" >
-  <div class="container" style="color: white;">
+<form name="Sign-up Validation" action="#" onsubmit=" return signupvalidation()" method="post" >
+  <div class="content" style="color: white;">
     <img class="su" src="su.png" >
     <hr>
     <label> Firstname </label>         
@@ -132,13 +198,13 @@ li a {
 Course :  
 </label>   
 <select>  
-<option value="Course">Course</option>  
-<option value="BCA">BCA</option>  
-<option value="BBA">BBA</option>  
-<option value="B.Tech">B.Tech</option>  
-<option value="MBA">MBA</option>  
-<option value="MCA">MCA</option>  
-<option value="M.Tech">M.Tech</option>  
+<option name="course" value="Course">Course</option>  
+<option name="course" value="BCA">BCA</option>  
+<option name="course" value="BBA">BBA</option>  
+<option name="course" value="B.Tech">B.Tech</option>  
+<option name="course" value="MBA">MBA</option>  
+<option name="course" value="MCA">MCA</option>  
+<option name="course" value="M.Tech">M.Tech</option>  
 </select>  
   
 <br>  
@@ -146,9 +212,9 @@ Course :
 <label>   
 Gender :  
 </label><br>  
-<input type="radio" name="male"/> Male <br>  
-<input type="radio" name="female"/> Female <br>  
-<input type="radio" name="other"/> Other  
+<input type="radio" name="gender" value="male"/> Male <br>  
+<input type="radio" name="gender" value="female"/> Female <br>  
+<input type="radio" name="gender" value="other"/> Other  
 <br>  
 <br>  
   
