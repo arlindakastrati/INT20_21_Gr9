@@ -6,6 +6,18 @@
 <title>Contact</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<script>
+  function showPosition() {
+      if(navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+              var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+              document.getElementById("result").innerHTML = positionInfo;
+          });
+      } else {
+          alert("Sorry, your browser does not support HTML5 geolocation.");
+      }
+  }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 body {
@@ -167,13 +179,15 @@ border-radius: 60px;
   display: list-item;
 }
 #show{
+  margin-top: 10px;
 margin-left: 900px;
   padding: 10px 40px;
   color: rgb(9, 47, 83);
   background-color: lightcyan;
   }
   #result{
-    margin-left: 700px;
+    margin-right: 20px;
+text-align: right;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
