@@ -235,7 +235,9 @@ margin: 5px;
 border-radius: 30px;
 
 }
-
+.sub-menu-2 ul li a{
+  text-align: left;
+}
 .sub-menu-1 li:hover .sub-menu-2 ul li {
 width: 150px;
 padding: 5px;
