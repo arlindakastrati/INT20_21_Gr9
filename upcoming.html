@@ -4,26 +4,26 @@
 <meta charset="uft-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
-    Today
+    Upcoming
 </title>
 <style>
     body {
 background-color: rgb(146, 146, 146);
+background-image: url("foto2.jpg") ;
         font-family: Arial, Helvetica, sans-serif;
         background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: scroll;
+        
+        background-attachment: fixed;
         
     }
-    #n{
-        background-color: rgb(0, 0, 0);
-    }
+    
     ul{
         list-style-type: none;
         padding: 0  ;
         margin: 0;
         overflow: hidden;
-        margin-left: 400px;
+        background-color: none;
+        margin-left: 500px;
         border-radius: 30px;
 
     }
@@ -35,7 +35,7 @@ background-color: rgb(146, 146, 146);
     li a{
   font-size: 25px;
   display: block;
-  color: rgb(255, 255, 255);
+  color: rgb(172, 252, 255);
   text-align: center;
   padding: 14px 60px;
   text-decoration: none;
@@ -45,7 +45,7 @@ background-color: rgb(146, 146, 146);
     }
     li a:hover::after {
   width: 100%;
-  background-color: none;
+  background-color: white;
 
 }
 li a::after {
@@ -82,25 +82,17 @@ li a::after {
   border-radius: 30px;
 
 }
-.active,  a{
-    background: rgba(190, 190, 190, 0.226);
-}
-.active,  ul li:hover {
-    background:rgba(0, 0, 0, 0.596);
-    border-radius: 30px;
-    
-}
 .mySlides1  {display: none;}
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 800px;
   position: relative;
   margin: auto;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 30px;
   border: 3px solid black;
-  padding: 8px;
+  padding: 12px;
 }
 
 .prev, .next {
@@ -155,11 +147,13 @@ h1{
    
   position: absolute;
   top: 8px;
-  left: 16px;
-font-size: 30px;
+  left: 13px;
+  right: 13px;
+font-size: 26px;
+text-align: center;
 color: white;
-border-radius: 30px;
-background-color: rgb(153, 205, 50);
+border-radius: 20px;
+background-color: rgb(114, 114, 114);
 }
 .column {
   float: left;
@@ -210,55 +204,130 @@ background-color: rgb(153, 205, 50);
 }
 .b0{
   font-size: 50px;
-  margin-left: 600px;
+  margin-left: 610px;
   text-decoration: underline;
   color: gold;
 }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  
+  cursor: pointer;
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: rgb(172, 252, 255);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  text-shadow: 5px 5px 5px;
+  margin: 0;
+}
+
+.n a:hover, .dropdown:hover::after .dropbtn {
+  width: 100%;
+  background-color: none;}
+
+  .n a:hover, .dropdown:hover::after .dropbtn {
+
+
+  content: '';
+  background: rgb(6, 123, 141);
+  height: 2px;
+  width: 0;
+  display: block;
+  margin-top: 2px !important;
+  transition: width 1s;
+  margin: 0 auto; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(76, 113, 136);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 30px;
+  text-align: left; 
+  background-color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(112, 98, 96, 0.164);
+  border-radius: 30px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn:hover
+    {
+        color: white;
+    }
+
+    #wht :hover
+    {
+        color:white;
+    }
 </style>
     </head>
     <body>
 
-<div id="n">
-    <ul>
-        <li ><a href="events.html">Events</a></li>
-        <li><a href="todo.html">TO DO</a></li>
-        <li><a href="#########">History</a></li>  
-    </ul>
-</div>
-<hr>
-<div>
-    <ul id="nav">
-        <li class="active"><a href="today.html">Today</a></li>
-        <li><a href="upcoming.html">Upcoming</a></li>
-    </ul>
-</div>
+      <div>
+        <ul>
+          <div class="dropdown">
+            <button class="dropbtn">Events</button>
+            <div class="dropdown-content">
+              <a href="events.html">Today</a>
+              <a href="upcoming.html">Upcoming</a>
+            </div>
+          </div>
+          <li id="wht"><a href="experiences.html">Experiences</a></li>
+          <li id="wht"><a href="history.html">History</a></li>
+        </ul>
+      </div>
+      <br/>
 <div>
 <div>
   <b class="b0">Top awaitings</b>
 </div>
 <div class="slideshow-container"> 
-    <div class="mySlides1"><a href="https://www.eventbrite.com/e/monthly-wellness-wednesday-an-hour-for-you-your-wellbeing-tickets-113687193456?aff=ebdssbonlinebrowse" target="_blank">
+    <div class="mySlides1"><a href="https://www.eventbrite.co.uk/e/startup-2021-the-uks-biggest-start-up-show-of-the-new-year-tickets-124391294711?aff=ebdssbonlinebrowse" target="_blank">
     <div id="v1">
-        <div class="f1">Monthly Wellness Wednesday: An Hour for You & Your Wellbeing</div> 
-         <img src="eventspic/rocks.jpeg" style="width: 100%;" >
+        <div class="f1">StartUp 2021: The UK's biggest start-up show of the new year</div> 
+         <img src="eventspic/StartUp.jpg" style="width: 100%; border-radius: 7px;" >
         
        
      </div>
     </a>
     <div class="time">
-        <b>Wed, January 20, 2021  9:00 PM – 10:00 PM CET</b></div>
+        <b>Wed, Jan 27, 2021 6:00 PM CET + 2 more events</b></div>
     </div>
 
-<div class="mySlides1"><a href="https://www.eventbrite.com/e/the-mads-a-night-of-shorts-2-live-riffing-with-mst3ks-the-mads-tickets-132988934483?aff=ebdssbonlinebrowse" target="_blank">
+<div class="mySlides1"><a href="https://www.eventbrite.co.uk/e/nspa-conference-2021-suicide-prevention-in-a-changing-world-tickets-130241962215?aff=ebdssbonlinebrowse" target="_blank">
     <div id="v1">
-        <div class="f1">The Mads: A Night of Shorts 2 - Live riffing with MST3K's The Mads!</div> 
-         <img src="eventspic/movie.jpg" style="width: 100%;" >
+        <div class="f1">NSPA Conference 2021: Suicide prevention in a changing world</div> 
+         <img src="eventspic/SuicidePrevention.jpg" style="width: 100%; border-radius: 7px;" >
         
        
      </div>
     </a>
     <div class="time">
-        <b>Sat, January 23, 2021  9:30 PM – 11:00 PM CET</b>
+        <b>Thu, Jan 28, 2021 11:00 AM CET</b>
      </div>
     </div>
   
@@ -266,7 +335,7 @@ background-color: rgb(153, 205, 50);
         <div id="v1">
             <div class="f1">The 2021 Financial Checklist
             </div> 
-             <img src="eventspic/finance.jpg" style="width: 100%;" >
+             <img src="eventspic/finance.jpg" style="width: 100%; border-radius: 7px;" >
          </div>
         </a>
         <div class="time">
@@ -276,104 +345,125 @@ background-color: rgb(153, 205, 50);
     <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
     <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
   </div>
+  <div>
+    <br/>
+    <b class="b0">Late January</b>
+  </div>
+  <div class="column">
+    <a href="https://www.eventbrite.com/e/virtual-stargazing-tour-of-the-moon-registration-133081972763?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/Moon.jpg" alt="Join us to examine various features of the Moon and learn about its fun facts!" style="width:100%">
+        <b> Fri, January 22, 2021 4:00 AM – 5:00 AM CET</b>
+        <div class="f11">Virtual Stargazing - Tour of the Moon, Various Features of the Moon 
+      </a>
+   </div> 
+  </div>
+    <div class="column">
+      <a href="https://www.eventbrite.com/e/mastering-time-tickets-125884157905?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/MasteringTime.jpg" alt="Learn how to use time" style="width:100%">
+        <b> Fri, January 22, 2021 12:00 AM – 1:15 AM CET</b>
+        <div class="f11">Mastering Time, Strategies and Skills in Time Management
+        </a>
+   </div> 
+  </div>
   <div class="row">
     <div class="column">
-        <a href="https://www.eventbrite.co.uk/e/pacing-how-to-write-an-addictive-page-turner-registration-133203530345?aff=ebdssbonlinebrowse" target="_blank">
-            <img src="eventspic/Pacing-Anna.jpg" alt="Addictive Page-Turner" style="width:100%">
-            <b> Wed, January 6, 2021  3:00 PM – 4:00 PM EST</b>
-            <div class="f11">The 2021 Financial Checklist
+        <a href="https://www.eventbrite.ca/e/inclusive-and-competency-based-ieps-part-3-student-agency-tickets-128719779325?aff=ebdssbonlinebrowse" target="_blank">
+            <img src="eventspic/MultiColorHand.jpg" alt="With Featured Guest: Leyton Schnellert" style="width:100%">
+            <b> Sat, January 23, 2021 6:00 PM – 8:00 PM CET</b>
+            <div class="f11">Inclusive and Competency Based IEPs Part 3: Student agency
         </a>
     </div> 
     </div>
-    <div class="column">
-      <a href="https://www.eventbrite.com/e/van-gogh-museum-amsterdam-livestream-art-tour-jan-9-1100-am-est-tickets-133991557355?aff=ebdssbonlinebrowse" target="_blank">
-        <img src="eventspic/VanGogh.jpg" alt="Van Gogh art museum" style="width:100%">
-        <b> Sat, January 9, 2021  5:00 PM – 6:40 PM CET</b>
-        <div class="f11">Van Gogh Museum - Amsterdam: Livestream 
-      </a>
-   </div> 
-    </div>
-    <div class="column">
-      <a href="https://www.eventbrite.com/e/virtual-meet-and-greet-a-lincoln-park-zoo-animal-tickets-127932460433?aff=ebdssbonlinebrowse" target="_blank">
-        <img src="eventspic/ParkZoo.jpg" alt="Virtual meet about park zoo animal" style="width:100%">
-        <b> Sat, January 9, 2021  5:00 PM – 5:45 PM CET</b>
-        <div class="f11">Virtual Meet-and-Greet a Lincoln Park Zoo Animal
-      </a>
-   </div> 
-    </div>
   </div>
-
+  <div>
+    <br/>
+    <b class="b0">Sport Events</b>
+  </div>
   <div class="row">
     <div class="column1">
-      <a href="https://www.eventbrite.co.uk/e/vision-board-and-goal-setting-workshop-tickets-133714978099?aff=ebdssbonlinebrowse" target="_blank">
-        <img src="eventspic/VisionGoal.jpg" alt="Vision board and goal setting workshop" style="width:100%">
-        <b> Sun, 10 January 2021  11:00 – 17:00 CET</b>
-        <div class="f11">Vision Board and Goal Setting Workshop
+      <a href="https://www.eventbrite.co.uk/e/an-evening-with-red-bull-racing-tickets-127893650351?aff=ebdssbonlinesearch" target="_blank">
+        <img src="eventspic/RedBull-Drivers.jpg" alt="Virtual events with The Red Bull Racing Formula One Team" style="width:100%">
+        <b> Mon, 1 February 2021 20:00 – 21:30 CET</b>
+        <div class="f11">An Evening with Red Bull Racing
       </a>
    </div> 
     </div>
     <div class="column1">
-      <a href="https://www.eventbrite.com/e/managing-upwards-tickets-129281020011?aff=ebdssbonlinebrowse" target="_blank">
-        <img src="eventspic/ManagingUpwards.jpg" alt="Forest" style="width:100%">
-        <b> Mon, January 11, 2021  11:00 AM – 11:45 AM CET</b>
-        <div class="f11">Managing Upwards
-        </a>
+      <a href="https://www.eventbrite.com/e/kung-fu-online-class-traditional-shaolin-kung-fu-tickets-132668983501?aff=ebdssbonlinesearch" target="_blank">
+        <img src="eventspic/KungFu.jpg" alt="Learn Traditional Kung Fu from a Shaolin disciple from China" style="width:100%">
+        <b> Tue, Feb 2, 2021 5:30 PM CET</b>
+        <div class="f11">Traditional Shaolin Kung Fu
     </div> 
     </div>
     
   </div>
 
-
+  <div>
+    <br/>
+    <b class="b0">Education here</b>
+  </div>
   <div class="row">
   </div>
   <div class="column">
-    <a href="https://www.eventbrite.ca/e/covid-19-vaccine-and-you-tickets-132138468717?aff=ebdssbonlinebrowse" target="_blank">
-      <img src="eventspic/COVID-19-Vaccine.jpg" alt="COVID-19 vaccine webinar" style="width:100%">
-      <b> Tue, January 12, 2021  12:30 AM – 2:30 AM CET</b>
-      <div class="f11">COVID 19 Vaccine and You Informative webinar daily session
+    <a href="https://www.eventbrite.co.uk/e/mathematics-in-progression-step-2-years-1-3-tickets-134428698857?aff=ebdssbonlinesearch" target="_blank">
+      <img src="eventspic/MathEducation.jpg" alt="Mathematics and Numeracy" style="width:100%">
+      <b> Wed, 3 February 2021 19:00 – 20:00 CET</b>
+      <div class="f11">Mathematics in Progression Step 2 (Years 1-3)
       </a>
     </div> 
   </div>
   <div class="column">
-    <a href="https://www.eventbrite.co.uk/e/free-webinar-on-positive-psychology-in-a-time-of-pandemic-tickets-124820273799?aff=ebdssbonlinebrowse" target="_blank">
-      <img src="eventspic/PositivePsychoPandemy.jpg" alt="Webinar about positive psychology in pandemic time" style="width:100%">
-      <b> Wed, 13 January 2021  20:30 – 21:30 CET</b>
-      <div class="f11">Free Webinar on Positive Psychology in a Time of Pandemic
-      </a>
-    </div> 
-  </div>
+    <a href="https://www.eventbrite.co.uk/e/culture-things-and-empire-series-one-drugs-tickets-129656633481?aff=ebdssbonlinesearch" target="_blank">
+        <img src="eventspic/Drugs.jpg" alt="Culture, Things, and Empire: Series One, Seminar Three: Drugs" style="width:100%">
+        <b> Wed, 17 February 2021 18:00 – 19:00 CET</b>
+        <div class="f11"> Culture, Things, and Empire: Series One - Drugs
+</div> 
+</div>
   <div class="column">
-    <a href="https://www.eventbrite.com/e/edap-pdlns-35th-annual-conf-virtual-session-1-of-4-tickets-125368517611?aff=ebdssbonlinebrowse" target="_blank">
-      <img src="eventspic/PediatricNurses.jpg" alt="Conference about pediatrics" style="width:100%">
-      <b> Sun, May 30, 2021 9:00 AM CEST</b>
-      <div class="f11">EDAP: PdLN's 35th Annual Conf - Virtual /Session 1 of 4
+    <a href="https://www.eventbrite.co.uk/e/act100-mindfulness-and-acceptance-for-self-esteem-tickets-123986628343?aff=ebdssbonlinebrowse" target="_blank">
+      <img src="eventspic/Acceptance.jpg" alt="How to use Acceptance and Commitment Therapy" style="width:100%">
+      <b> Thu, Feb 25, 2021 10:30 AM CET</b>
+      <div class="f11">#ACT100: Mindfulness and Acceptance for Self-Esteem
     </a>
  </div> 
   </div>
 
-
+  <div>
+    <br/>
+    <b class="b0">Attractive is on</b>
+  </div>
   <div class="row">
     <div class="column1">
-      <a href="https://www.eventbrite.com.au/e/effective-classroom-practice-literacy-for-all-tickets-126901544937?aff=ebdssbonlinebrowse" target="_blank">
-        <img src="eventspic/EffectiveClassrom.jpg" alt="Reading Effectively Practice" style="width:100%">
-        <b> Thu, 14 Jan 2021, 1:00 PM CET</b>
-        <div class="f11">Effective Classroom Practice: Literacy for All
-      </a>
+      <a href="https://www.eventbrite.co.uk/e/a-journey-through-the-history-of-gameshow-tickets-127629341797?aff=ebdssbonlinesearch" target="_blank">
+        <img src="eventspic/GameShow.jpg" alt="Player head to head in our immersive gameshow mockups." style="width:100%">
+        <b> Fri, Mar 5, 2021 8:00 PM CET + 2 more events</b>
+        <div class="f11">A Journey Through the History of Gameshow
    </div> 
     </div>
     <div class="column1">
-      <a href="https://www.eventbrite.sg/e/idp-ielts-masterclasstm-webinar-sea-tickets-85048035965?aff=ebdssbonlinebrowse" target="_blank">
-        <img src="eventspic/IELTSwebinar.jpg" alt="IELTS Masterclass Webinar" style="width:100%">
-        <b> Mon, Jan 18, 2021 11:30 AM CET + 2 more events</b>
-        <div class="f11">IDP IELTS Masterclass™ Webinar (SEA) Facebook - Zoom
+      <a href="https://www.eventbrite.co.uk/e/bucketrace-the-fat-big-quiz-of-everything-2-tickets-135585745615?aff=ebdssbonlinesearch" target="_blank">
+        <img src="eventspic/FatBigQuiz.jpg" alt="A standard version of our Fat Big Quiz." style="width:100%">
+        <b> Sat, Mar 6, 2021 8:00 PM CET + 3 more events</b>
+        <div class="f11">BucketRace The Fat Big Quiz of... Everything 2
       </a>
    </div> 
     </div>
    
   </div>
 
-
+  <div>
+    <br/>
+    <b class="b0">Combinating</b>
+  </div>
   <div class="row">
+    <div class="column">
+      <a href="https://www.eventbrite.co.uk/e/virtual-running-event-run-5k-10k-21k-edinburgh-medal-tickets-135681337533?aff=ebdssbonlinesearch" target="_blank">
+        <img src="eventspic/EdinburghMedal.jpg" alt="Virtual Running Event - Run or Walk 5K, 10K or 21K - Edinburgh Medal" style="width:100%">
+        <b> Thu, Mar 18, 2021 2:30 PM CET</b>
+        <div class="f11">Virtual Running Event - Run 5K, 10K, 21K - Edinburgh Medal
+        </a>
+      </div> 
+    </div>
     <div class="column">
       <a href="https://www.eventbrite.com/e/mit-sloan-sports-analytics-conference-2021-registration-107231291680?aff=ebdssbonlinebrowse" target="_blank">
         <img src="eventspic/SportAnalytics.jpg" alt="Sport Analytics Conference" style="width:100%">
@@ -383,18 +473,10 @@ background-color: rgb(153, 205, 50);
    </div> 
     </div>
     <div class="column">
-      <a href="https://www.eventbrite.co.uk/e/a-feminists-guide-to-botany-online-botanical-painting-session-tickets-107072247976?aff=ebdssbonlinebrowse" target="_blank">
-        <img src="eventspic/Botany.jpg" alt="Painting session about botany" style="width:100%">
-        <b> Thu, Jan 7, 2021 7:30 PM CET</b>
-        <div class="f11">A FEMINIST'S GUIDE TO BOTANY: Online Botanical Painting Session
-      </a>
-   </div> 
-    </div>
-    <div class="column">
-      <a href="https://www.eventbrite.co.uk/e/startup-2021-the-uks-biggest-start-up-show-of-the-new-year-tickets-124391294711?aff=ebdssbonlinebrowse" target="_blank">
-        <img src="eventspic/StartUp.jpg" alt="Learn about UK-biggest Start-Up" style="width:100%">
-        <b> Sat, 23 January 2021  10:30 – 17:00 CET</b>
-        <div class="f11">StartUp 2021: The UK's biggest start-up show of the new year
+      <a href="https://www.eventbrite.com/e/edap-pdlns-35th-annual-conf-virtual-session-1-of-4-tickets-125368517611?aff=ebdssbonlinebrowse" target="_blank">
+        <img src="eventspic/PediatricNurses.jpg" alt="Conference about pediatrics" style="width:100%">
+        <b> Sun, May 30, 2021 9:00 AM CEST</b>
+        <div class="f11">EDAP: PdLN's 35th Annual Conf - Virtual /Session 1 of 4
       </a>
    </div> 
     </div>
