@@ -137,18 +137,18 @@ li a {
       </div>
     </div>
       <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<form action="#" method="post">
-  <div class="imgcontainer">
+      <form action="#" method="post" onsubmit="return validate()">
+        <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   
   <div class="container" style="color: white;">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname">
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw">
         
     <button type="submit">Login</button>
     <label>
@@ -175,7 +175,19 @@ li a {
     var data = e.dataTransfer.getData("text");
     e.target.appendChild(document.getElementById(data));
   }
-  </script>
+  function validate(){
+      var name=document.getElementById("uname");
+      var pasword= document.getElementById("psw");
 
+      if(name.value.trim()==""|| pasword.value.trim()==""){
+          alert("No blank values allowed");
+          return false;
+      }
+      else{
+          return true;
+      }
+  }
+  </script>
+</div>
 </body>
 </html>
