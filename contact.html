@@ -36,6 +36,7 @@ ul {
   background-color: none;
 }
 li a {
+  font-size: 25px;
   display: block;
   color: rgb(84, 252, 84);
   text-align: center;
@@ -65,14 +66,17 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  border-radius: 30px;
 }
 
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 40px;
   border: none;
   cursor: pointer;
+  border-radius: 30px;
+  
 }
 p{
   background-color: #004fc6;
@@ -80,6 +84,7 @@ p{
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+ border-radius: 30px;
   text-align: center;
 }
 
@@ -88,15 +93,12 @@ input[type=submit]:hover {
   background-color: #368d3b;
 }
 
-/* Stilizimi i  container/contact section */
 .contact {
-  border-radius: 5px;
   background-color:rgb(197, 186, 186);
   padding: 10px;
   
 }
 
-/* kolonat afer njera tjetres */
 .column {
   float: left;
   width: 50%;
@@ -109,7 +111,6 @@ input[type=submit]:hover {
   margin-top: 50px;
 }
 
-/* pastrimi pas kolonave */
 .row:after {
   content: "";
   display: table;
@@ -153,11 +154,35 @@ footer {
   margin-bottom: 5px;
   margin-top: 15px;
   background-color: rgba(2, 23, 56, 0.864);
+  border-radius: 30px;
 }
+#cv {
+  display:flex;
+}
+#myCanvas {
+margin-left: 380px;
+border-radius: 60px;
+}
+#back {
+  display: list-item;
+}
+#show{
+margin-left: 900px;
+  padding: 10px 40px;
+  color: rgb(9, 47, 83);
+  background-color: lightcyan;
+  }
+  #result{
+    margin-left: 700px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
 </style>
+
 </head>
 <body>
-<div class="nav">
+<div >
   <ul>
     <li style="float: left;"><a href="Sandbox.html"><i class="fa fa-chevron-left"></i></a></li>
         <li style="float: right;"><a href="signin.html">Sign in</a></li>
@@ -179,6 +204,7 @@ footer {
      allowfullscreen=""
      aria-hidden="false"
      tabindex="0">
+     
     </iframe> 
 
     <div style="outline: 2px solid green; outline-offset: 5px;" class="column"  style="float: left;" style="width: 250px; margin-top: -15px; margin-bottom:-10px;"  >
@@ -197,8 +223,11 @@ footer {
         </select>
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <p><a href="mailto:someone@example.com">Send email</a></p>
-        <input type="submit" value="Submit">
+        <p><a style="color: white;" href="mailto:someone@example.com">Send email</a></p>
+        <div id="cv"><input type="submit" value="Submit">
+       <div id="back"><a href="Sandbox.html"> <canvas id="myCanvas" width="130" height="20" style="border:1px solid;" ></canvas></a></button>
+      <p1 style="margin-left: 420px;">Go back</p1>
+      </div></div>
       </form>
     </div>
       <script>
@@ -209,6 +238,11 @@ footer {
         });
       </script>
 </div>
+<div id="result">
+  
+</div>
+<button id="show" type="button" onclick="showPosition();">Show Position</button>
+
 </div>
 <footer>
   <div class="SocialMedia">
@@ -218,13 +252,26 @@ footer {
     <li><a href="#########"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
     </ul>
   </div>
-  <div class="address" ">
+  <div class="address" >
     <address >Sunny Hill, p.n. 10000 Prishtine,Republic of Kosovo</address>
   </div>
 </footer>
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.font = "15px Arial";
+  ctx.fillText("Go back", 40, 15);
+  </script>
+<script>
+var c = document.getElementById("myCanvas");
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "green");
+grd.addColorStop(1, "white");
 
+ctx.fillStyle = grd;
+ctx.fillRect(0, 0, 150, 80);
 
-
+</script>
 
 </body>
 </html>
