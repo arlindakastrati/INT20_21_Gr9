@@ -24,9 +24,17 @@ body p{
     font-size: 22px;
     text-align: start;
     color: white;
+    background-color:rgba(157, 160, 163, 0.699);
+    color:rgb(235, 240, 243);
+    border-radius: 5%;
+    font-size: 22px;
 }
 body ul li{
     font-size:20px;
+    background-color:rgba(157, 160, 163, 0.699);
+    color:rgb(235, 240, 243);
+    border-radius: 5%;
+    font-size: 22px;
 }
 
 p.spechhh {
