@@ -1,9 +1,10 @@
 body{
-    font-style: sans-serif;
+    font-style: Arial;
     margin-left: 50px;
     margin-right: 50px;
     color: white;
     background-color:rgb(126, 164, 179);
+    font-family: Arial;
 }
 
 
@@ -12,7 +13,7 @@ body h1{
     text-align: center;
     font-size: 60px;
     color: rgb(7, 72, 102);
-    background-color: transparent;
+    text-shadow:1px 6px 10px aliceblue ;
 }
 
 body h3{
@@ -24,22 +25,15 @@ body p{
     font-size: 22px;
     text-align: start;
     color: white;
-    background-color:rgba(157, 160, 163, 0.699);
-    color:rgb(235, 240, 243);
-    border-radius: 5%;
-    font-size: 22px;
 }
 body ul li{
     font-size:20px;
-    background-color:rgba(157, 160, 163, 0.699);
-    color:rgb(235, 240, 243);
-    border-radius: 5%;
-    font-size: 22px;
+    
 }
 
 p.spechhh {
     position: relative;
-    width: 500px;
+    width: 520px;
     height: 320px;
     left:890px;
     top:-320px;
@@ -73,7 +67,7 @@ p.spechhhh {
 
 p.specch{
     position: relative;
-    width:600px;
+    width:640px;
     height: 300px;
     left:850px;
     top:-350px;
@@ -92,7 +86,7 @@ p.specch{
 
 p.speccch{
     position: relative;
-    width:600px;
+    width:605px;
     height: 250px;
     left:850px;
     top:-350px;
@@ -110,7 +104,7 @@ p.speccch{
 
 p.specccch{
     position: relative;
-    width:500px;
+    width:540px;
     height: 250px;
     left:850px;
     top:-350px;
