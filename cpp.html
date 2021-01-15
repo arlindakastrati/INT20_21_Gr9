@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Introduction in C++</title>
         <link rel="stylesheet" href="cpp.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <h1>Introduction in C++</h1><br><br><br><br>
@@ -126,12 +127,12 @@
                     <main><em> This tutorial will teach you the basics of C++.
                         It is not necessary to have any prior programming experience.
                         Click <a href="https://www.w3schools.com/cpp/cpp_getstarted.asp" target="_blank" id="getattr">Here</a>
-                        <button style="margin-left:1000px; width:122px; margin-top:-1599px; background-color:rgb(7,72,103); margin-left:44px; border:2px solid black">Show href value</button>
+                        <button style="margin-left:1000px; width:122px; margin-top:-1599px; background-color:rgb(7,72,103); margin-left:44px; border:2px solid black" id="btnn">Show href value</button>
                     </em></main>
                     <br><br><br>
                     <script>
                         $(document).ready(function(){
-                            $("button").click(function(){
+                            $("btnn").click(function(){
                                 alert($("#getattr").attr("href"));
                             });
                         });
