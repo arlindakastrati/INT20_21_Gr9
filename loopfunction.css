@@ -41,7 +41,7 @@ body{
     display: none;
 }
 h2{
-    text-align: center;
+    text-align: left;
     color:rgb(7,72,103);
 }
 #syntax,#syntax1, #syntax2,#syntax3{
@@ -60,7 +60,8 @@ h2{
     margin-right: 23%; 
 }
 #output5{
-    margin-top:-40%;
+    margin-top:-50%;
+    margin-left:84px;
 }
 #output,#output1, #output,#output3, #output5{
     margin-right: 250px;

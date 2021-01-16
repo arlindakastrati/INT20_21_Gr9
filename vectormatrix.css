@@ -5,6 +5,7 @@ body{
     text-align: left;
     margin:70px 70px ;
     font-size:22px;
+    
 }
 #output{
     float:right;
@@ -28,7 +29,7 @@ body{
 }
 h1{
   text-align: center;
-  color:rgb(12, 12, 53);
+  color:rgb(7,72,103);
   text-shadow: 5px 6px 10px aliceblue;
   font-size:50px;
 }
@@ -59,4 +60,8 @@ a:active{
   color:rgb(19, 59, 19);
   background-color:transparent;
   text-decoration: underline;
+}
+h3{
+  color:  rgb(6,82,117);
+  font-size:30px;
 }
