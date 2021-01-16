@@ -21,13 +21,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 body {
-  font-family:'Yellowtail',cursive;
+  font-family: sans-serif;
   
-  background-image: url("foto2.jpg");
+  background-image: url('night.jpg');
 }
 
 * {
   box-sizing: border-box;
+  
 }
 @font-face{
   font-family: 'CrimsonText';
@@ -36,7 +37,7 @@ body {
   font-weight: 100;
 }
 h1 {
-  font-family: CrimsonText;
+  font-family: sans-serif;
   font-weight: 100;
 }
 
@@ -54,8 +55,7 @@ li a {
   text-align: center;
   padding: 14px 30px;
   text-decoration: none;
-  border: 1px;
-  border-color: rgb(84, 252, 84);
+
 
 }
 li a:hover::after {
@@ -91,7 +91,7 @@ input[type=submit] {
   
 }
 p{
-  background-color: #004fc6;
+  background-color:  rgb(7, 72, 102);;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -136,38 +136,6 @@ input[type=submit]:hover {
   }
 }
 
-footer .SocialMedia li{
-  display: inline-block;
-    margin: 6px;
-    list-style: none;
-
-}
-footer .SocialMedia li a{
-  color: rgb(91, 123, 194);
-    text-decoration: none;
-    font-size: 60px;
-    transition: all ease-in-out 250ms;
-}
-
-footer .SocialMedia li a:hover{
-  color:  #368d3b;
-}
-footer .address {
-  color: white;
-float: right ;
-margin-left: 30%;
-margin-top: 50px;
-
-}
-footer {
-  display: flex;
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  margin-top: 15px;
-  background-color: rgba(2, 23, 56, 0.864);
-  border-radius: 30px;
-}
 #cv {
   display:flex;
 }
@@ -179,8 +147,8 @@ border-radius: 60px;
   display: list-item;
 }
 #show{
-  margin-top: 10px;
-margin-left: 900px;
+  margin-top: -50px;
+  margin-left: 1200px;
   padding: 10px 40px;
   color: rgb(9, 47, 83);
   background-color: lightcyan;
@@ -204,15 +172,16 @@ text-align: right;
 
   </ul>
 </div>
-<h1 style="font-size: 40px; color:rgb(84, 252, 84); text-align: center;">Contact Us</h1>
+<h1 style="font-size: 50px; color: white; text-align: center;margin-top: -55px;font-family: sans-serif;">Contact Us</h1>
+<hr style="width: 300px;height: 3px;background-color:white;margin-top: -27px;margin-bottom: 40px;">
 
 <div  class="Contact " style="margin-left:2px;margin-right:20px;width:100%; color: rgb(0, 0, 0);">
   <div style="text-align:center">
   </div>
   <div class="row" >
     <iframe style="margin-left: 110px; margin-top: 100px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.592851308751!2d21.16496201489919!3d42.64879067916858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec1b6ecb2c1%3A0x7f0893730efce187!2sFakulteti%20Teknik!5e0!3m2!1sen!2s!4v1608551724719!5m2!1sen!2s"
-     width="400"
-     height="350"
+     width="600"
+     height="450"
      frameborder="0"
      tyle="border:0;" 
      allowfullscreen=""
@@ -221,13 +190,14 @@ text-align: right;
      
     </iframe> 
 
-    <div style="outline: 2px solid green; outline-offset: 5px;" class="column"  style="float: left;" style="width: 250px; margin-top: -15px; margin-bottom:-10px;"  >
+    <div style="
+    background-color: rgba(211, 211, 211, 0.2);" class="column"  style="float: left;" style="width: 250px; margin-top: -15px; margin-bottom:-10px;"  >
       <form action="">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
+        <label for="country">Continent</label>
         <select id="country" name="country">
           <option value="europe">Europe</option>
           <option value="usa">USA</option>
@@ -235,7 +205,7 @@ text-align: right;
           <option value="australia">Australia</option>
           <option value="asia">Asia</option>
         </select>
-        <label for="subject">Subject</label>
+        <label for="subject">Message</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
         <p><a style="color: white;" href="mailto:someone@example.com">Send email</a></p>
         <div id="cv"><input type="submit" value="Submit">
@@ -258,18 +228,7 @@ text-align: right;
 <button id="show" type="button" onclick="showPosition();">Show Position</button>
 
 </div>
-<footer>
-  <div class="SocialMedia">
-    <ul>
-    <li><a href="#########"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-    <li><a href="########"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-    <li><a href="#########"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-    </ul>
-  </div>
-  <div class="address" >
-    <address >Sunny Hill, p.n. 10000 Prishtine,Republic of Kosovo</address>
-  </div>
-</footer>
+
 <script>
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
