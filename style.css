@@ -176,6 +176,7 @@ flex-direction: column;
   }
 .sub-menu-1 {
 display: none;
+
 }
 
 .menu-bar ul li:hover .sub-menu-1 {
@@ -236,15 +237,15 @@ border-radius: 30px;
 
 }
 .sub-menu-2 ul li a{
-  text-align: left;
+  text-align: center;
 }
 .sub-menu-1 li:hover .sub-menu-2 ul li {
 width: 150px;
-padding: 5px;
+
 border-bottom: 0.5px rgb(78, 55, 55);
 background: transparent;
 border-radius: 0;
-text-align: left;
+text-align:center;
 }
 
 .sub-menu-1 li:hover .sub-menu-2 ul li:last-child {
