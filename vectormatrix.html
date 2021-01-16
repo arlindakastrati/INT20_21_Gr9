@@ -22,7 +22,7 @@
                 no resizing happens. Inserting and erasing at the beginning or in the middle is linear in time.
             </p>
 
-            <h3>Why Use Vectors in C++</h3>
+            <h3 style="color: rgb(6,82,117);">Why Use Vectors in C++</h3>
             <p style="background-color:rgba(157, 160, 163, 0.699);
             color:rgb(235, 240, 243);
             border-radius: 5%;
@@ -37,7 +37,7 @@
                 capacity function works.
             </p><br>
          </div>
-            <h2>How to Create C++ Vectors</h2>
+            <h3>How to Create C++ Vectors</h3>
 
             <p style="background-color:rgba(157, 160, 163, 0.699);
             color:rgb(235, 240, 243);
@@ -57,7 +57,7 @@
             <br>The data elements in C++ vectors are inserted at the end. Use modifiers to insert new elements or delete existing ones.
                 </div>    
         </p> <br><br>
-            <h2>Iterators</h2>
+            <h3>Iterators</h3>
             <p style="background-color:rgba(157, 160, 163, 0.699);
             color:rgb(235, 240, 243);
             border-radius: 5%;
@@ -76,22 +76,22 @@
                     <li><span style="color:rgb(138, 83, 83)">crend() </span>- Returns a constant reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end) </li>
                 </ul>
                 <h3>Example: begin() </h3>
-                <img src="vector1.png" alt="vector" style="width:690px; height:490px">
-                <p id="output">Output:<br><br>
-                    <img src="vector1.1.png" alt="" style="width:444px"> </p>
+                <img src="vector1.png" alt="vector" style="width:650px; height:440px; object-fit:auto;">
+                <p id="output"><b>Output:</b><br><br>
+                <img src="vector1.1.png" alt="" style="width:400px"> </p>
                 <button id="b" type="button">Hide output!</button>
                 <script type="text/javascript"> 
                     $(document).ready(function() { 
-                        $("button").click(function() { 
+                        $("#b").click(function() { 
                             $('#output').slideToggle("fast",function callback() { 
-                                $('button').text("Show it!"); 
+                                $('#b').text("Show it!"); 
                                 alert("The output is going to hide")
                             }); 
                         }); 
                     }); 
                 </script> 
             </p><br><br>
-            <h2>Capacity</h2>
+            <h3>Capacity</h3>
             <ul>
                 <li><span style="color:rgb(138, 83, 83)">size() </span>-Returns the number of elements in the vector.</li>
                     <li><span style="color:rgb(138, 83, 83)">max_size() </span>-Returns the maximum number of elements that the vector can hold. </li>
@@ -103,10 +103,10 @@
             </ul>
             <h3>Example: size()</h3>
             <img src="vector2.png" alt="vector">
-            <p id="output"> Output:<br>
-                <img src="vector2.1.png" alt="vector2.1" style="width:444px; height:233px"> </p> 
+            <p id="output"><b>Output:</b><br><br>
+                <img src="vector2.1.png" alt="vector2.1" style="width:244px; height:133px object-fit:auto;"> </p> 
             <br><br><br>
-            <h2>Element access:</h2>
+            <h3>Element access:</h3>
             <ul>
                 <li><span style="color:rgb(138, 83, 83)">reference operator[g] </span>-Returns a reference to the element at position ‘g’ in the vector.</li>
                     <li><span style="color:rgb(138, 83, 83)">at(g) </span>-Returns a reference to the element at position ‘g’ in the vector.</li>
@@ -117,10 +117,10 @@
             </ul>
             <h3>Example: front()</h3>
             <img src="vector3.png" alt="vector">
-            <p id="output"> Output:<br>
-                <img src="vector3.1.png" alt="vector3.1"  style="width:400px; height:50px"> </p> 
+            <p id="output"><b>Output:</b><br><br>
+                <img src="vector3.1.png" alt="vector3.1"  style="width:300px; height:50px;" > </p> 
             <br><br><br>
-            <h2>Modifiers:</h2>
+            <h3>Modifiers:</h3>
             <ul>
                 <li><span style="color:rgb(138, 83, 83)">assign()</span>-It assigns new value to the vector elements by replacing old ones</li>
                 <li><span style="color:rgb(138, 83, 83)">push_back() </span>-It push the elements into a vector from the back</li>
@@ -134,9 +134,9 @@
                
             </ul>
             <h3>Example: assign()</h3>
-            <img src="vector4.png" alt="vector">
-            <p id="output"> Output:<br>
-                <img src="vector4.1.png" alt="vector4.1" style="width:444px; height:233px"  > </p> 
+            <img src="vector4.png" alt="vector" style="width:633px;">
+            <p id="output"><b>Output:</b><br><br>
+                <img src="vector4.1.png" alt="vector4.1" style="width:300px; height:133px; margin-right:-3px;"  > </p> 
             <br><br><br>
             <h2 style="text-align: center;">Matrix in C++</h2><hr>
             <p style="background-color:rgba(157, 160, 163, 0.699);
@@ -157,20 +157,23 @@
                 <code>type name[size1][size2]...[sizeN]</code><br><br>
                 For example:<br>
                 <br><img src="vector5.2.png"><br>
-                <p id="setjquery">This array x can hold a maximum of <span style="background-color:rgb(108, 120, 133); border-radius:5px;">24 elements.</span></p>
-            </p>
-            <script>
-                $(document).ready(function(){
-                    var text = $("#setjquery").text();
-                    $("#setjquery").after(text);
-                })
-            </script>
-
+                <p id="setjquery">This array x can hold a maximum of:
+                <button id="BTN" style="background-color:rgb(108, 120, 133); border-radius:5px;">Show number!</button>   
+                </p>
+                <script>
+                    $(document).ready(function(){
+                        $("#BTN").click(function(){
+                            $("#setjquery").text("24 elements")
+                        })
+                    })
+                </script>
+                <br><br>
+            <h3>Multidimensional Array Initialization</h3>
+            
             <div style="background-color:rgba(157, 160, 163, 0.699);
             color:rgb(235, 240, 243);
             border-radius: 5%;
             font-size: 22px;"><br>
-               <h2>Multidimensional Array Initialization</h2>
                 <p>Like a normal array, we can initialize a multidimensional array in more than one way.
                     <ol>
                         <li style="font-size:23px;">Initialization of two-dimensional array</li><br>
@@ -193,9 +196,9 @@
                 </div><br><br>
                     <h3> Two Dimensional Array example:</h3>
                     <br>
-                    <img src="matrix2.1.png">
-                    <p id="output"> Output:<br><br>
-                        <img src="matrix2.2.png" alt=""  style="width:444px; height:200px" > </p>
+                    <img src="matrix2.1.png" style="width:744px;">
+                    <p id="output"><b>Output:</b><br><br>
+                        <img src="matrix2.2.png" alt=""  style="width:300px; height:150px" > </p>
                     <br><br>
                     <p style="background-color:rgba(157, 160, 163, 0.699);
                     color:rgb(235, 240, 243);
@@ -220,8 +223,8 @@
                 </script>
                         <br><br>
                         <h3> Three Dimensional Array example:</h3><br>
-                    <img src="matrix3.1.png">
-                    <p id="output"> Output:<br><br>
+                    <img src="matrix3.1.png" style="width:650px;">
+                    <p id="output"><b>Output:</b><br><br>
                         <img src="matrix3.2.png" alt="vector4.1"  style="width:140px; height:273px"> </p>
             <br><br>
                     For more information on vector go to the page <a href="http://www.cplusplus.com/reference/vector/vector/" target="_blank">www.cplusplus.com</a>
@@ -238,7 +241,7 @@
       
     </body>
     <foot>
-        <audio controls autoplay id="audio">
+        <audio controls id="audio">
             <source src="Music2.mp3" type="audio/mpeg">
             Your browser does not support the audio element
         </audio>
