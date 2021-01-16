@@ -12,10 +12,10 @@ body{
     color:rgb(236, 241, 243);
     word-spacing: normal;
     text-align: left;
-    font-family: system-ui;
     margin:50px 50px;
 }
-h1{
+h1{ 
+    font-family: sans-serif;
     background-color: rgba(114, 92, 92, 0.253);
     text-align: center;
     padding-top:16px;
@@ -27,6 +27,7 @@ h1{
 }
 
 h2{
+    font-family: sans-serif;
     background-color:rgb(109, 111, 112);
     text-align: center;
     padding-top:15px;
